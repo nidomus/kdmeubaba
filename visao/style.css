@@ -42,7 +42,8 @@
 
 	position: absolute;
 	margin-top: 20px; 
-	/* padding-left: 100px; */
+	width: auto;
+	/* margin-left: 2%; */
 
 }
 
@@ -288,7 +289,7 @@
 }
 
 #pesquisar{
-	width: 890;
+	width: 100%;
 	border: solid 2px #542583;
 	/* margin-top: 10px;
 	margin-left: 15px; */
