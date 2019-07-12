@@ -36,44 +36,39 @@ $usuario= unserialize($_SESSION["usuario"]);
 		<div id="topo" class="jumbotron-fluid row">
 
 
-		<div id="topo_1" class="col-3">
+			<div class="col-9">
 				<a href="index.php" id="linkpag">
-				<img id="logo" src="logo_short.png" alt="">
+					<p id="titulo"> KD MEU BABA?</p>
 				</a>
 			</div>
-			<div class="col-7" id="main">
-			<form class="form-inline" action="">
-				<input id="pesquisar" class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+			<div class="col-1" id="perfil">
 
-			</form>
-
-			</div>
-
-			<div class="col-2 row" id="perfil">
-			<div class="col-4" id="fotoPerfil">
 				<img id="icon" src="basketball-player.png" alt="">
-				</div>
 
-			<div class="col-8" id="teste">
-					<p id="text"> <?=$usuario->getNome();?></p>
-
-						
-					<div class="buttonBox">
-
-			<img src="notification.png" width="30px" alt=""id="iconBar">
-			<a href="../controle/sair.php"><img src="exit_icon.png" width="30px" alt=""id="iconBar"></a>
-
-</div>
 			</div>
-			</div>
-			</div>
-			
 
-			
+			<div class="col-2" id="teste">
+				<table>
+					<tr>
+						<td>
+							<p> nome: <?=$usuario->getNome();?> </p>
+
+
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../controle/sair.php"> Sair </a>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+
 		</div>
 	</div>
 
-	<div class="container-fluid row " id="corpo">
+	<div class=" container-fluid row " id="corpo">
 
 
 		<!-- corpo -->
@@ -85,10 +80,23 @@ $usuario= unserialize($_SESSION["usuario"]);
 				<p class="text1"> Amigos </p>
 
 			</div>
+			<div class="box ">
+
+
+
+				<img src="notification.png" width="30px" alt="">
+
+
+
+			</div>
 
 		</div>
 
 		<div class="col-6" id="centro">
+			<form class="form-inline" action="">
+				<input id="pesquisar" class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+
+			</form>
 
 			<div class="">
 
@@ -97,10 +105,10 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 					<div id="topoPostagem" class="row">
 						<div id="fotoPostagem" class="col-2 ">
-							<img src="icon.png" id="usrIcon" alt="John Doe" class="mr-3 mt-3 rounded-circle">
+							<img src="icon.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:70px;">
 						</div>
 							<div id="infPostagem" class="col-10">
-								 <h4>LBJames <!--<i>Posted on February 19, 2016</i></small>--></h4>
+								<h4>LBJames <small><i>Posted on February 19, 2016</i></small></h4>
 								<p>Sauce!</p>
 							</div>
 
@@ -115,16 +123,15 @@ $usuario= unserialize($_SESSION["usuario"]);
 				<div class="postagem">
 					<div id="topoPostagem" class="row">
 						<div id="fotoPostagem" class="col-2 ">
-							<img src="icon.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" id="usrIcon">
+							<img src="icon.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:70px;">
 						</div>
 						<div id="infPostagem" class="col-10">
-							<h4>NJokic </h4>
+							<h4>NJokic <small><i>Convite February 19, 2016</i></small></h4>
 							<p></p>
 						</div>
 
 					</div>
-					<div class="conteudo">
-						<div class="center" >
+					<div class="center">
 						<h3> <b>Evento: BABA FONTANA</b></h3>
 						<table>
 							<tr>
@@ -136,7 +143,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 							</tr>
 						</table>
 					</div>
-					</div>
+
 
 				</div>
 

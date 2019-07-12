@@ -5,7 +5,10 @@ session_start();
 <html>
 
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <meta charset="utf-8">
@@ -14,50 +17,86 @@ session_start();
 
 <body>
 
-    <?php if (empty($_SESSION["usuario"])) { ?>
-        <div class="container-fluid">
-
-            <div class="box">
-                <div >
-                    <p><img id="logo" src="visao/logo.png" alt=""></p>
-                </div>
-
-                <div id="login">
-
-                    <form action="controle/login.php" method="post">
+    <?php if(empty($_SESSION["usuario"])){?>
+    
+    
+        <div id="topo" class="jumbotron-fluid row">
 
 
+            <div class="col-9">
+                <a href="index.php" id="linkpag">
+                    <p id="titulo"> KD MEU BABA?</p>
+                </a>
+            </div>
 
-                        <div>
+            <div class="col-1" id="perfil">
 
-                            <label for="mail">Email</label>
-
-                            <input type="email" name="email" id="mail" placeholder="E-mail">
-
-                        </div>
-
-                        <div class="margin-top">
-
-                            <label for="pass">Senha</label>
-
-                            <input type="password" name="senha" id="pass" placeholder="Senha">
-
-                        </div>
-
-                        <p> <input type="submit" value="Logar" /> </p>
-
-
-                </div>
-
-                </form>
-
+                <img id="icon" src="visao/basketball-player.png" alt="">
 
             </div>
+
+            <div class="col-2" id="teste">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="login.php">entrar</a>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="visao/cadastro.html"> registre-se </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+
+    <div class="container-fluid">
+        
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+                <div class="item active">
+                    <img src="visao/compartilhe.png" alt="Compartilhe suas jogadas e convide seus amigos pro baba!" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="visao/adicione_um_jogo.png" alt="Marque um baba onde você quiser!" style="width:100%;">
+                </div>
+        
+                <div class="item">
+                    <img src="visao/logo.png" alt="KD meu baba!" style="width:100%;">
+                </div>
         </div>
 
-    <?php } else {
+        <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
 
-        header("location: visao/index.php");
+
+    
+    <?php } else{
+
+    header("location: visao/index.php");    
     }
     ?>
 

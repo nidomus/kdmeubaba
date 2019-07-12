@@ -1,5 +1,5 @@
 #body{
-	background-color: #e2e2e2;
+	background-color: #f1f1f1;
 
 }
 .bckg{
@@ -17,46 +17,32 @@
 }
 
 #topo{
-	
+
 	background-color: #FDB827;
 	width: auto;
 	font-size: medium;
 	border-radius: 5px;
 	border-bottom: 5px solid #542583;
-	height: 120px;
-	height: 120px;
+
 	padding: 5px;
 
 }
-
-#main {
-    margin-top: 50px;
-	margin-left: 20px;
-	width: fit-content;
-}
-
 #corpo{
 
 	margin-top: 20px; 
-	padding-left: 20px;
 
 }
 
-#logoIcon {
-	max-width: 60%;
-	float: right;
-    /* height: -webkit-fill-available; */
+.container-fluid{
+	width: auto;
 }
-#topo_1{
-	width: fit-content;
 
-}
 
 #titulo{
 
 	font-family: High Tower text;
 
-	font-size: 400%;
+	font-size: 550%;
 	margin: 5px;
 	padding: 10px;
 	padding-left: 100px;
@@ -64,12 +50,6 @@
 	color: #542583
 
 
-}
-#fotoPerfil {
-    margin-top: 25px;
-}
-#text{
-	color:#542583;
 }
 
 .pad{
@@ -80,18 +60,18 @@
 
 }
 #perfil{
-		padding: 10px;
+		padding: 10px
 
 
 }
 
 #icon{
 
-	/* float: right; */
-	width: 45px;
+	float: right;
+	width: 150px;
 	background-color: #FFCC00;
 	border-radius: 50%;
-	border: 2px solid #542583;
+	border: 5px solid #542583;
 
 }
 
@@ -166,12 +146,20 @@
 
 
 #teste{
-
-		padding-left: initial;
-		padding-top: 35px;
-		align-content: center;
-	
+	padding-top: 30px;
+	align-content: center;
 }
+
+
+tr{
+
+	height: 60px;
+}
+
+td{
+	width: 100
+}
+
 
 .margin{
 	margin-top:10px;
@@ -185,25 +173,8 @@
 	margin:10px;
 	border: solid 3px #542583;
 	border-radius: 10px;
-}
-
-#iconBar {
-    vertical-align: middle;
-    width: 20px;
-    margin-right: 5px; 
-}
-
-.buttonBox{
-	
-	background-color: #FDB827;
-	width: inherit;
-	/* border: solid 2px #542583; */
-	border-radius: 10px;
-	height: 32px;
 
 }
-
-
 .box2{
 
 	background-color: #FDB827;
@@ -251,56 +222,38 @@
 }
 
 #pesquisar{
-	width: 90%;
+	width: 140%;
 	border: solid 2px #542583;
-	/* margin-top: 10px;
-	margin-left: 15px; */
-	background-color: #e2e2e2;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: #FDB827;
 
 
 }
 .conteudo{
-
-	margin-top: 10px;
 	
-} 
+}
 .mtop{
 		margin: 3px;
 }
 
-#topoPostagem{
-	width: auto;
-border-bottom:3.5px solid #542583;
-}
-
 #fotoPostagem{
+padding-left: 40px;
 
-
-		padding-left: 25px;
-		padding-right: unset;
-		padding-bottom: 2px;
-		margin-right: unset;
-	
 }
 #infPostagem{
 	padding-top: 10px;
 }
-#usrIcon{
-	width: 55px;
-}
 
 .postagem{
-	margin-top: 10px;
+
 	width: auto;
 	background-color: #FDB827;
 	margin: 10px;
 	border: solid 2px #542583;
 	border-radius: 10px;
-	padding-top: 15px;
-	padding-right: 25px;
-	padding-left: 25px;
-	padding-bottom: 25px;
-	height: 110%;
+
+	padding: 10px
 }
 
 .overflow{
