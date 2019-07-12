@@ -15,55 +15,18 @@ session_start();
 
 </head>
 
-<body>
+<body style="background-color:#FDB827" >
 
     <?php if(empty($_SESSION["usuario"])){?>
     
-    
-        
-
-
-		<div id="topo" class="jumbotron-fluid row">
-
-
-		<div id="topo_1" class="col-2">
-				<a href="index.php" id="linkpag">
-				<img id="logoIcon" src="visao/logo_short.png" alt="">
-				</a>
-			</div>
-			<div class="col-6" id="main">
-			<form class="form-inline" action="">
-				<input id="pesquisar" class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
-
-			</form>
-			</div>
-
-			<div class="col-4 row" id="perfil">
-                <div class="col-2" id="fotoPerfil">
-                    <img id="icon" src="visao/basketball-player.png" alt="">
-                    </div>
-
-                <div class="col-10 row" id="teste">
-                    <div class="col-6" id="userName">
-                        <a href="login.php">entrar</a>
-                    </div>
-						
-                <div class="buttonBox col-6 fit">
-
-			<img src="visao/notification.png" width="30px" alt=""id="iconBar">
-			<a href="controle/sair.php"><img src="visao/exit_icon.png" width="30px" alt=""id="iconBar"></a>
-
-</div>
-			</div>
-			</div>
-			</div>
-			
-
-			
-		</div>
-
-
-    
+    <div class="container-fluid" id="cabecalho">
+        <div class="col-6">
+            <img src="visao/logo.png" alt="">
+            <p><a href="login.php"><button id="botao_entrar">Entrar</button></a>
+        </div>
+       </p>
+       
+    </div>
 
     <div class="container-fluid">
         
@@ -105,7 +68,9 @@ session_start();
 
 
     
-    <?php } else{
+    <?php } 
+    
+    else{
 
     header("location: visao/index.php");    
     }

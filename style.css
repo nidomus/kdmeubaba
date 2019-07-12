@@ -187,7 +187,6 @@ body{
 
 }
 #linkpag{
-
 	text-decoration: none;
 }
 #logoIcon {
@@ -234,4 +233,20 @@ width: fit-content;
   padding-top: 35px;
   align-content: center;
 
+}
+#myCarousel{
+  width: 100%;
+  weight: 50%;
+}
+
+#botao_entrar{
+  width: 100%;
+  background: #542583;
+  color: #FDB827;
+  border-color: #542583;
+  border-radius: 50px;
+  
+}
+#cabecalho{
+  size: 25%;
 }
