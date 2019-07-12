@@ -26,7 +26,6 @@ session_start();
 
 
                     <form action="controle/login.php" method="post">
-                    <h1 id="titulo"> KD MEEEEU penis?®</h1>
 
 
                         <div>

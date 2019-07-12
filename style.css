@@ -79,12 +79,13 @@
 
 .box {
             width: 455px;
-            height: 310px;
+            height: 60%;
             background: #fdb827;
             border-radius: 40px;
             justify-content: center;
             align-items: center;
             padding: 5px;
+            border: 2px solid #542583;
      }
 
 body{
@@ -130,6 +131,7 @@ body{
     }
   }
   #logo{
+    padding-left: 90px;
     max-width: 60%;
 
       /* height: -webkit-fill-available; */
