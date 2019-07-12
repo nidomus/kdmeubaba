@@ -168,3 +168,68 @@ body{
   -webkit-animation-delay: .1s;
   animation-delay: .1s;
 }
+#topo{
+	
+	background-color: #FDB827;
+	width: auto;
+	font-size: medium;
+	border-radius: 5px;
+	border-bottom: 5px solid #542583;
+	height: 120px;
+	height: 120px;
+	padding: 5px;
+
+}
+#topo_1{
+	width: fit-content;
+
+}
+#linkpag{
+
+	text-decoration: none;
+}
+#logoIcon {
+	max-width: 60%;
+	float: right;
+    /* height: -webkit-fill-available; */
+}
+#main {
+  margin-top: 40px;
+margin-left: 0px;
+width: fit-content;
+}
+#pesquisar{
+	width: 890;
+	border: solid 2px #542583;
+	/* margin-top: 10px;
+	margin-left: 15px; */
+	background-color: #e2e2e2;
+}
+#perfil{
+  padding: 10px;
+  border-left: 3.5px solid #542583;
+}
+#fotoPerfil {
+  margin-top: 25px;
+}
+#icon{
+
+	/* float: right; */
+	width: 45px;
+	background-color: #FFCC00;
+	border-radius: 50%;
+	border: 2px solid #542583;
+
+}
+#iconBar {
+  vertical-align: middle;
+  width: 20px;
+  margin-right: 5px; 
+}
+#teste{
+
+  padding-left: initial;
+  padding-top: 35px;
+  align-content: center;
+
+}
