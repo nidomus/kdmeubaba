@@ -244,6 +244,16 @@
 	height: 32px;
 
 }
+.reactionBox{
+	
+	background-color: #FDB827;
+	width: fit-content;
+	/* border: solid 2px #542583; */
+	border-radius: 10px;
+	height: 32px;
+	margin-top: 2px
+
+}
 
 
 .box2{
