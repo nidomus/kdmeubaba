@@ -41,7 +41,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 				<img id="logo" src="logo_short.png" alt="">
 				</a>
 			</div>
-			<div class="col-7" id="main">
+			<div class="col-6" id="main">
 			<form class="form-inline" action="">
 				<input id="pesquisar" class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
 
@@ -49,16 +49,18 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 			</div>
 
-			<div class="col-2 row" id="perfil">
+			<div class="col-3 row" id="perfil">
 			<div class="col-4" id="fotoPerfil">
 				<img id="icon" src="basketball-player.png" alt="">
 				</div>
 
-			<div class="col-8" id="teste">
+			<div class="col-8 row" id="teste">
+				<div class="col-6 fit">
 					<p id="text"> <?=$usuario->getNome();?></p>
-
+				
+				</div>
 						
-					<div class="buttonBox">
+					<div class="buttonBox col-6 fit">
 
 			<img src="notification.png" width="30px" alt=""id="iconBar">
 			<a href="../controle/sair.php"><img src="exit_icon.png" width="30px" alt=""id="iconBar"></a>
@@ -77,7 +79,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 
 		<!-- corpo -->
-		<div class=" col-2">
+		<div class=" col-2" id="esquerdo">
 			<div class="box">
 				<p class="text1"> Grupos </p>
 			</div>
@@ -144,7 +146,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 			</div>
 
-		<div class="col-4 container">
+		<div class="col-4 container" id="direita">
 
 
 

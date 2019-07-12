@@ -31,14 +31,20 @@
 
 #main {
     margin-top: 50px;
-	margin-left: 20px;
+	margin-left: 0px;
 	width: fit-content;
 }
 
 #corpo{
 
 	margin-top: 20px; 
-	padding-left: 20px;
+	padding-left: 200px;
+
+}
+
+#direita{
+
+	position: relative;
 
 }
 
@@ -105,13 +111,14 @@
 
 }
 
-/* Divisão do conteúdo da pág
+
 #centro{
+
+	position: relative;
 
 }
 
 
-*/
 
 .list-group{
 	color: #FBD827;
@@ -164,6 +171,9 @@
 	margin: 5%;
 }
 
+.fit{
+	width: fit-content;
+}
 
 #teste{
 
@@ -196,7 +206,7 @@
 .buttonBox{
 	
 	background-color: #FDB827;
-	width: inherit;
+	width: fit-content;
 	/* border: solid 2px #542583; */
 	border-radius: 10px;
 	height: 32px;
@@ -251,7 +261,7 @@
 }
 
 #pesquisar{
-	width: 90%;
+	width: 790px;
 	border: solid 2px #542583;
 	/* margin-top: 10px;
 	margin-left: 15px; */
