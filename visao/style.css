@@ -48,6 +48,10 @@
 
 }
 
+.container-fluid{
+	width: auto;
+}
+
 #logoIcon {
 	max-width: 60%;
 	float: right;
