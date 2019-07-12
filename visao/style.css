@@ -25,11 +25,24 @@
 	border-bottom: 5px solid #542583;
 
 	padding: 5px;
-
 }
+
+#main{
+    margin-top: 50px;
+	margin-left: 0px;
+	width: fit-content;
+}
+	
 #corpo{
 
 	margin-top: 20px; 
+	padding-left: 200px;
+
+}
+
+#direita{
+
+	position: relative;
 
 }
 
@@ -85,13 +98,14 @@
 
 }
 
-/* Divisão do conteúdo da pág
+
 #centro{
+
+	position: relative;
 
 }
 
 
-*/
 
 .list-group{
 	color: #FBD827;
@@ -144,6 +158,9 @@
 	margin: 5%;
 }
 
+.fit{
+	width: fit-content;
+}
 
 #teste{
 	padding-top: 30px;
@@ -175,6 +192,18 @@ td{
 	border-radius: 10px;
 
 }
+
+.buttonBox{
+	
+	background-color: #FDB827;
+	width: fit-content;
+	/* border: solid 2px #542583; */
+	border-radius: 10px;
+	height: 32px;
+
+}
+
+
 .box2{
 
 	background-color: #FDB827;
@@ -223,6 +252,7 @@ td{
 
 #pesquisar{
 	width: 140%;
+	width: 790px;
 	border: solid 2px #542583;
 	margin-top: 10px;
 	margin-left: 10px;
