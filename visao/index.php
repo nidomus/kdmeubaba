@@ -99,36 +99,65 @@ $usuario= unserialize($_SESSION["usuario"]);
 					
 				<div class="container">
 						
-				<div class="dropdown naDireita">
-					<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
-						<img src="menu.png">
-					</button>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">COMPARTILHAR</a>
-						<a class="dropdown-item" href="#">DENUNCIAR</a>
-						<a class="dropdown-item" href="#">SALVAR
-						</a>
-					</div>
-				</div>
+
 
 					<div id="topoPostagem" class="row">
 						<div id="fotoPostagem" class="col-2 ">
 							<img src="icon.png" id="usrIcon" alt="John Doe" class="mr-3 mt-3 rounded-circle">
 						</div>
-							<div id="infPostagem" class="col-10">
+							<div id="infPostagem" class="col-8">
 								 <h4>LBJames <!--<i>Posted on February 19, 2016</i></small>--></h4>
 								<p>Sauce!</p>
 							</div>
 
-						
+							<div class="dropdown col-2">
+					<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
+						<img src="menu.png">
+					</button>
+
+					<div class="dropdown-menu">
+					
+						<a class="dropdown-item" href="#">COMPARTILHAR</a>
+						<a class="dropdown-item" href="#">DENUNCIAR</a>
+						<a class="dropdown-item" href="#">SALVAR</a>
+						<?php if($usuario->getNivel()==1){?>
+						<a class="dropdown-item" href="#">BLOQUEAR POSTAGEM</a>
+						<a class="dropdown-item" href="#">ANALISAR DENÚCIAS</a>
+						<?php } ?>
+					</div>
+				</div>
+
 					</div>
 					<div class="conteudo">
 						<img class="center" id="img" src="post.jpg" alt="" width="50%">
 					</div>	
 					</div>
+					<div class="reactionBox">
+
+					<img src="like_icon.png" width="30px" alt=""id="iconBar">
+					<img src="coment_icon.png" width="30px" alt=""id="iconBar">
+					<img src="alerta_icon.png" width="30px" alt=""id="iconBar">
+
+					</div>
 				</div>
 			</div>
 				<div class="postagem">
+				<div class="dropdown naDireita">
+					<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
+						<img src="menu.png">
+					</button>
+
+					<div class="dropdown-menu">
+					
+						<a class="dropdown-item" href="#">COMPARTILHAR</a>
+						<a class="dropdown-item" href="#">DENUNCIAR</a>
+						<a class="dropdown-item" href="#">SALVAR</a>
+						<?php if($usuario->getNivel()==1){?>
+						<a class="dropdown-item" href="#">BLOQUEAR POSTAGEM</a>
+						<a class="dropdown-item" href="#">ANALISAR DENÚCIAS</a>
+						<?php } ?>
+					</div>
+				</div>
 					<div id="topoPostagem" class="row">
 						<div id="fotoPostagem" class="col-2 ">
 							<img src="icon.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" id="usrIcon">
@@ -151,6 +180,10 @@ $usuario= unserialize($_SESSION["usuario"]);
 										data-target="#cancelar">Cancelar</button></td>
 							</tr>
 						</table>
+					</div>
+
+					<div class="bottonPostagem" >
+					<div></div>
 					</div>
 					</div>
 
