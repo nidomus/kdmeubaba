@@ -75,7 +75,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 		</div>
 	</div>
 
-	<div class="container-fluid row " id="corpo">
+	<div class=" container-fluid row " id="corpo">
 
 
 		<!-- corpo -->
