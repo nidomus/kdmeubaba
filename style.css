@@ -129,6 +129,11 @@ body{
       transform: translateX(0);
     }
   }
+  #logo{
+    max-width: 60%;
+
+      /* height: -webkit-fill-available; */
+  }
    
   /*fadeOutLeft*/
   @-webkit-keyframes fadeOutLeft {

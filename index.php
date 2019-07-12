@@ -14,47 +14,50 @@ session_start();
 
 <body>
 
-    <?php if(empty($_SESSION["usuario"])){?>
-    <div class="container-fluid">
+    <?php if (empty($_SESSION["usuario"])) { ?>
+        <div class="container-fluid">
 
-        <div class="box">
+            <div class="box">
+                <div >
+                    <p><img id="logo" src="visao/logo.png" alt=""></p>
+                </div>
 
-            <div id="login">
+                <div id="login">
 
-                <form action="controle/login.php" method="post">
 
-                    <h1 id="titulo"> KD MEEEEU BABA?®</h1>
+                    <form action="controle/login.php" method="post">
 
-                    <div>
 
-                        <label for="mail">Email</label>
+                        <div>
 
-                        <input type="email" name="email" id="mail" placeholder="E-mail">
+                            <label for="mail">Email</label>
 
-                    </div>
+                            <input type="email" name="email" id="mail" placeholder="E-mail">
 
-                    <div class="margin-top">
+                        </div>
 
-                        <label for="pass" style="marg">Senha</label>
+                        <div class="margin-top">
 
-                        <input type="password" name="senha" id="pass" placeholder="Senha">
+                            <label for="pass">Senha</label>
 
-                    </div>
+                            <input type="password" name="senha" id="pass" placeholder="Senha">
 
-                    <p> <input type="submit" value="Logar" /> </p>
+                        </div>
+
+                        <p> <input type="submit" value="Logar" /> </p>
+
+
+                </div>
+
+                </form>
 
 
             </div>
-
-            </form>
-
-
         </div>
-    </div>
-    
-    <?php } else{
 
-    header("location: visao/index.php");    
+    <?php } else {
+
+        header("location: visao/index.php");
     }
     ?>
 
