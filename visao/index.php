@@ -95,11 +95,22 @@ $usuario= unserialize($_SESSION["usuario"]);
 		</div>
 
 		<div class="col-6" id="centro">
-
 			<div class="">
-
-
 				<div class="postagem">
+					
+				<div class="container">
+						
+				<div class="dropdown naDireita">
+					<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
+						<img src="menu.png">
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">COMPARTILHAR</a>
+						<a class="dropdown-item" href="#">DENUNCIAR</a>
+						<a class="dropdown-item" href="#">SALVAR
+						</a>
+					</div>
+				</div>
 
 					<div id="topoPostagem" class="row">
 						<div id="fotoPostagem" class="col-2 ">
@@ -114,10 +125,10 @@ $usuario= unserialize($_SESSION["usuario"]);
 					</div>
 					<div class="conteudo">
 						<img class="center" id="img" src="post.jpg" alt="" width="50%">
-
 					</div>	
 					</div>
 				</div>
+			</div>
 				<div class="postagem">
 					<div id="topoPostagem" class="row">
 						<div id="fotoPostagem" class="col-2 ">

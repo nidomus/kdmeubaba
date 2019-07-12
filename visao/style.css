@@ -1,3 +1,13 @@
+.naDireita{
+	float: right;
+}
+
+.btnSemBorda{
+	background-color: #FDB827;
+	border: none !important;
+}
+
+
 #body{
 	background-color: #e2e2e2;
 
