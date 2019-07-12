@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ADICIONAR JOGO</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Página de exemplo</title>
+
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+			<!-- Popper JS -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+			<!-- Latest compiled JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+			<style>
+				body{
+					background-color: #FDB827;
+				}
+				.addJogo{
+					text-align: center;
+					font-size: 40px;
+					color: #542583;
+				}
+				.roxo{
+					color: #542583;	
+				}
+				input{
+					border-color: #542583;
+				}
+				textarea{
+					border-color: #542583;
+				}
+				.bt{
+				background-color: #542583; 
+				border-color: #542583;
+				}
+
+			</style>
+	</head>
+	<body>
+		<div class="jumbutrom ">
+			<h1 class="addJogo">ADICIONAR JOGO</h1>
+		</div>
+		
+		<form>
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<tr>
+						<td><textarea rows="7" cols="50" maxlength="500"></textarea></td><br>
+					</tr>
+					<tr>
+						<label><td>Rua:</td></label>
+						<td><input type="text" name="Rua"></td>
+						<label><td>Nº:</td></label>
+						<td><input type="number" name="n" min="1" max="1000"></td><br>
+					</tr>
+					<tr>
+						<label><td>Bairro:</td></label>
+						<td><input type="text" name="Bairro"></td><br>
+					</tr>
+					<tr>
+						<label><td>Complemento:</td></label>
+						<td><input type="text" name="Complemento"></td><br>
+					</tr>
+					<tr>
+						<label><td>Horário:</td></label>
+						<td><input type="text" name="hora" pattern="[0-23]{2}:[0-59]{2}" title="Informe um horário compatível"></td><br>
+					</tr>
+					<tr>
+						<label><td>Dia(s):</td></label>
+						<input type="checkbox" id="Domingo">
+		                <label for="Domingo">Domingo</label>
+		                <input type="checkbox" id="Segunda"></td>
+		                <label for="Domingo">Segunda</label>
+		                <input type="checkbox" id="Terça">
+		                <label for="Terça">Terça</label>
+		                <input type="checkbox" id="Quarta"></td>
+		                <label for="Quarta">Quarta</label>
+		                <input type="checkbox" id="Quinta">
+		                <label for="Quinta">Quinta</label>
+		                <input type="checkbox" id="Sexta"></td>
+		                <label for="Sexta">Sexta</label>
+		                <input type="checkbox" id="Sabado">
+		                <label for="Sabado">Sabado</label>
+					</tr>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<tr>
+						<label><td>Nome:</td></label>
+						<td><input type="text" name="nome"></td><br>
+					</tr>
+					<tr>
+						<label><td>Tipo:</td></label>
+						<input type="checkbox" id="x3">
+		                <label for="x3">X3</label>
+		                <input type="checkbox" id="x5"></td>
+		                <label for="x5">X5</label><br>
+					</tr>
+					<tr>
+						<label><td>Quantidade max.:</td></label>
+						<td><input type="number" name="qtd" min="1" max="100"></td>
+					</tr>
+				</div>	
+			</div>
+			<tr>
+				<td><button class="bt"><b>ADICIONAR</b></button></td>
+				<td><a href="index.html"><td><button type="button" class="btn btn-danger">CANCELAR</button></td></a></td>
+			</tr>	
+		</form>
+		
+	</body>
+</html>

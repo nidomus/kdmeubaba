@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title></title>
+	<meta charset="utf-8">
+
+</head>
+<body data-spy="scroll" data-target="#scoll" data-offset="50">
+
+
+<div id="topo" class="jumbotron jumbotron-fluid  form-inline row">
+
+
+
+		<div class="col-7">
+		<a href="index.html">	<p id="titulo"> KD MEU BABA?</p> </a>
+		</div>
+		<div class="col-2"id="perfil">
+
+			<img id="icon" src="basketball-player.png" alt="">
+
+		</div>
+
+		<div class="col-3" id="teste">
+			<table>
+			<tr>
+				<td>
+				<button class="bt" id="cadastro" > Cadastrar-se </button>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<button class="bt" id="logar" data-toggle="modal" data-target="#myModal"> Logar-se </button>
+		</td>
+		</tr>
+		</table>
+		</div>
+
+
+
+</div>
+
+
+
+<div  class= " container container-fluid " id="corpo"  >
+	<div class="row  ">
+
+	<div class="box container container-fluid  col-12 col-sm-12 col-md-12 ">
+			<div class="jumbutrom">
+					<h1 class="cadastrar">CADASTRAR-SE</h1>
+					<p>
+						<img src="perfil.jpg" alt="perfil">
+					</p>
+				</div>
+				<form>
+								<div class="row">
+								<div class="col-md-6 col-lg-7 col-6">
+									<table>
+										<tr>
+											<label><td class="letraCor">Nome:</label>
+											<td><input type="text" name="nome"></td>
+										</tr>
+										<tr>
+											<label><td class="letraCor">Nascimento:</td></label>
+											<td><input type="date" name="data" id="data"></td>
+										</tr>
+										<tr>
+											<label><td class="letraCor">Bairro:</td></label>
+											<td><input type="text" name="bairro" id="bairro"></td>
+										</tr>
+										<tr>
+											<label><td class="letraCor">Fale sobre você:</td></label>
+											<td><textarea rows="5" cols="30" maxlength="500"></textarea>
+										</tr>
+									</table>
+								</div>
+								<div class="col-md-6 col-lg-5 col-6">
+									<table>
+										 <tr>
+											   <label><td class="letraCor">E-mail:</td></label>
+											   <td><input type="email" name="email"><br/></td>
+										 </tr>
+										 <tr>
+											   <label><td class="letraCor">Senha:</td></label>
+											   <td><input type="senha" name="senha"> <br/></td>
+										 </tr>
+										 <tr>
+											   <label><td class="letraCor">Confirmar Senha:</td></label>
+											   <td><input type="senha" name="senha"> <br/></td>
+
+
+									</table>
+									<div class="row margin">
+
+
+														<td><button class="bt" >Cadastrar</button></td>
+
+
+									</div>
+
+									</div>
+
+									<tr></tr>
+
+								</div>
+							</div>
+
+							</form>
+
+	</div>
+
+
+</div>
+
+
+
+
+</div>
+  </div>
+</div>
+
+
+<div class="modal" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h4 class="modal-title"></h4>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<!-- Modal body -->
+			<div class="modal-body">
+					  <form class="cor_fundo" action="" method="post">
+						  <h1 class="cor_texto">LOGIN</h1>
+
+						  <label for="email" class="cor_texto">Email</label>
+						  <input type="email" id="email">
+						  <p></p>
+						  <p></p>
+						  <p>
+						  <label for="password" class="cor_texto">Senha</label>
+						  <input type="password" id="password">
+						  </p><p>
+						  <a href="https://trello-attachments.s3.amazonaws.com/5c77d5fe4af24a5988869ef7/5cc106c3d001c88024b36207/2331268090422e7d0e84ecaad665dcb4/preencher" class="cor_texto">esqueceu a senha?</a>
+						  <a href="https://trello-attachments.s3.amazonaws.com/5c77d5fe4af24a5988869ef7/5cc106c3d001c88024b36207/2331268090422e7d0e84ecaad665dcb4/preencher" class="cor_texto posicao_texto">ainda não possui cadastro?</a>
+						  </p>
+						  <p>
+						  <input type="submit" name="entrar" class="cor_botao">
+						  </p>
+
+					  </form>
+
+			</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

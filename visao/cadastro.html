@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CADASTRAR USUÁRIO</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<style>
+		.naDireita{
+			text-align: right;
+		}
+		body{
+			background-color: #FDB827;
+		}
+		.amarelo{
+			background-color: #FDB827;
+		}
+		.cadastrar{
+			text-align: left;
+			font-size: 50px;
+			color: #542583;
+		}
+		label{
+			width: 100px;
+			display: inline-block;
+			color: #542583;
+			font-size: 30px;
+		}
+		.letraCor{
+			color: #542583;
+			font-size: 30px;
+		}
+		.bt{
+			background-color: #542583; 
+			border-color: #542583;
+
+		}
+		input{
+			border-color: #542583;
+		}
+		textarea{
+			border-color: #542583;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="jumbutrom">
+		<h1 class="cadastrar">CADASTRAR-SE</h1>
+		<p>
+			<img src="perfil.jpg" alt="perfil">	
+		</p>
+	</div>
+	<form>
+					<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<table>
+							<tr>
+								<label><td class="letraCor">Nome:</label>
+								<td><input type="text" name="nome"></td>
+							</tr>
+							<tr>
+								<label><td class="letraCor">Nascimento:</td></label>
+								<td><input type="date" name="data" id="data"></td>
+							</tr>
+							<tr>
+								<label><td class="letraCor">Bairro:</td></label>
+								<td><input type="text" name="bairro" id="bairro"></td>
+							</tr>
+							<tr>
+								<label><td class="letraCor">Fale sobre você:</td></label>
+								<td><textarea rows="5" cols="30" maxlength="500"></textarea>
+							</tr>
+						</table>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<table>
+						 	<tr>
+						   		<label><td class="letraCor">E-mail:</td></label>
+						   		<td><input type="email" name="email"><br/></td>
+						 	</tr>
+						 	<tr>
+						   		<label><td class="letraCor">Senha:</td></label>
+						   		<td><input type="senha" name="senha"> <br/></td>
+						 	</tr>
+						 	<tr>
+						   		<label><td class="letraCor">Confirmar Senha:</td></label>
+						   		<td><input type="senha" name="senha"> <br/></td>
+						 	</tr>
+						 		<tr>
+									<td><button class="bt"><b>CADASTRAR</b></button></td><br>
+								</tr>
+						</table>
+						<tr><td><a href="index.html"><td><button type="button" class="btn btn-danger">CANCELAR</button></td></a></td></tr>
+						
+					</div>
+				</div>
+
+				</form>
+</body>
+
+</html>

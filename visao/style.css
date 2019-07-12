@@ -1,0 +1,385 @@
+#body{
+	background-color: #e2e2e2;
+
+}
+.bckg{
+	background-image: url(jogobasquete.jpg);
+	background-repeat: no-repeat;
+	width:100%;
+
+
+
+}
+
+#linkpag{
+
+	text-decoration: none;
+}
+
+#topo{
+	
+	background-color: #FDB827;
+	width: auto;
+	font-size: medium;
+	border-radius: 5px;
+	border-bottom: 5px solid #542583;
+	height: 120px;
+	height: 120px;
+	padding: 5px;
+
+}
+
+#main {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#corpo{
+
+	margin-top: 20px; 
+	padding-left: 200px;
+
+}
+
+.container-fluid{
+	width: auto;
+}
+
+#logoIcon {
+	max-width: 60%;
+	float: right;
+    /* height: -webkit-fill-available; */
+}
+#topo_1{
+	width: fit-content;
+
+}
+
+#titulo{
+
+	font-family: High Tower text;
+
+	font-size: 400%;
+	margin: 5px;
+	padding: 10px;
+	padding-left: 100px;
+	text-align: left ;
+	color: #542583
+
+
+}
+#fotoPerfil {
+    margin-top: 25px;
+}
+#text{
+	color:#542583;
+}
+
+.pad{
+	padding: 30px;
+	padding-left: 100px;
+	float:right;
+
+
+}
+#perfil{
+		padding: 10px;
+
+
+}
+
+#icon{
+
+	/* float: right; */
+	width: 45px;
+	background-color: #FFCC00;
+	border-radius: 50%;
+	border: 2px solid #542583;
+
+}
+
+.center{
+
+	position: relative;
+	top: 25%;
+	left: 25%;
+	bottom: 25%;
+	right: 25%;
+
+}
+
+/* Divisão do conteúdo da pág
+#centro{
+
+}
+
+
+*/
+
+.list-group{
+	color: #FBD827;
+
+	background-color: #FBD827
+}
+
+
+.bt{
+	color: #FBD827;
+	font-size: 150%;
+	background-color: #542583;
+	border-color: #542583;
+	border-radius: 25px;
+	height: 50px;
+	width: 200px;
+}
+.btm{
+	color: #FBD827;
+	font-size: 90%;
+	background-color: #542583;
+	border-color: #542583;
+
+}
+
+.es{
+		border-top-left-radius: 10px;
+}
+.d{
+		border-top-right-radius: 10px;
+}
+
+
+.cor_fundo{
+	background: #FDB827;
+}
+.cor_texto{
+	color: #542583;
+}
+.cor_botao{
+	background: #542583;
+	border: 2px solid #542583;
+	border-radius: 5px;
+	color: white;
+	margin-left: 25%;
+	display: block;
+}
+.posicao_texto{
+
+	margin: 5%;
+}
+
+
+#teste{
+
+		padding-left: initial;
+		padding-top: 35px;
+		align-content: center;
+	
+}
+
+.margin{
+	margin-top:10px;
+
+}
+
+.box{
+	
+	background-color: #FDB827;
+	width: auto;
+	margin:10px;
+	border: solid 3px #542583;
+	border-radius: 10px;
+}
+
+#iconBar {
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 5px; 
+}
+
+.buttonBox{
+	
+	background-color: #FDB827;
+	width: inherit;
+	/* border: solid 2px #542583; */
+	border-radius: 10px;
+	height: 32px;
+
+}
+
+
+.box2{
+
+	background-color: #FDB827;
+	height: 350px;
+	width: auto;
+	margin:10px;
+	margin-top:20px;
+	border: solid 3px #542583;
+	border-radius: 10px;
+	padding: 40px;
+
+}
+
+.menu{
+
+
+
+	border-radius: 10px;
+
+
+	padding: 5px;
+}
+
+.mapa{
+
+
+	border: solid 3px #542583;
+	background-color: #FDB827;
+	border-radius: 10px;
+	margin-top: 10px;
+	padding: 5px
+
+
+}
+.pesquisar{
+
+	width: auto;
+	position: relative;
+	border: solid 3px #542583;
+	background-color: #FDB827;
+	border-radius: 10px;
+	padding-left: 10px;
+
+
+}
+
+#pesquisar{
+	width: 90%;
+	border: solid 2px #542583;
+	/* margin-top: 10px;
+	margin-left: 15px; */
+	background-color: #e2e2e2;
+
+
+}
+.conteudo{
+
+	margin-top: 10px;
+	
+} 
+.mtop{
+		margin: 3px;
+}
+
+#topoPostagem{
+	width: auto;
+border-bottom:3.5px solid #542583;
+}
+
+#fotoPostagem{
+
+
+		padding-left: 25px;
+		padding-right: unset;
+		padding-bottom: 2px;
+		margin-right: unset;
+	
+}
+#infPostagem{
+	padding-top: 10px;
+}
+#usrIcon{
+	width: 55px;
+}
+
+.postagem{
+	margin-top: 10px;
+	width: auto;
+	background-color: #FDB827;
+	margin: 10px;
+	border: solid 2px #542583;
+	border-radius: 10px;
+	padding-top: 15px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-bottom: 25px;
+	height: 110%;
+}
+
+.overflow{
+		overflow: auto;
+}
+
+
+.text2{
+	font-size: 300%;
+
+
+}
+
+#Cancelar{
+	background-color: red;
+	border-color: red;
+	color: white;
+}
+
+
+
+.text1{
+	background-color: #542583;
+	text-align: center;
+	font-size: 200%;
+
+	color: #FDB827;
+	height: 55px;
+}
+
+.naDireita{
+	text-align: right;
+}
+.amarelo{
+	background-color: #FDB827;
+}
+.cadastrar{
+	text-align: left;
+	font-size: 50px;
+	color: #542583;
+}
+label{
+	width: 100px;
+	/*display: inline-block;*/
+	color: #542583;
+	font-size: 100%;
+	font-style: unset;
+}
+.letraCor{
+	color: #542583;
+	font-size: 30px;
+}
+
+
+input{
+	border-color: #542583;
+}
+textarea{
+	border-color: #542583;
+}
+
+
+
+
+a:link {
+ text-decoration: none;
+}
+
+a:visited{
+	 text-decoration: none;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}

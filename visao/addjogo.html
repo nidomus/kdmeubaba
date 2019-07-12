@@ -1,0 +1,323 @@
+<html>
+<head>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title></title>
+	<meta charset="utf-8">
+  <style>
+
+    .addJogo{
+      text-align: center;
+      font-size: 40px;
+      color: #542583;
+    }
+    .roxo{
+      color: #542583;
+    }
+    input{
+      border-color: #542583;
+    }
+    textarea{
+      border-color: #542583;
+    }
+    .bt{
+    background-color: #542583;
+    border-color: #542583;
+    }
+
+  </style>
+
+</head>
+<body >
+
+
+<div id="topo" class="jumbotron jumbotron-fluid  form-inline row">
+
+
+
+		<div class="col-7">
+		<a href="index.html" id="linkpag" >	<p id="titulo"> KD MEU BABA?</p> </a>
+		</div>
+		<div class="col-2"id="perfil">
+
+			<img id="icon" src="basketball-player.png" alt="">
+
+		</div>
+
+		<div class="col-3" id="teste">
+			<table>
+			<tr>
+				<td>
+				<button class="bt" id="cadastro" > Cadastrar-se </button>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<button class="bt" id="logar" data-toggle="modal" data-target="#myModal"> Logar-se </button>
+		</td>
+		</tr>
+		</table>
+		</div>
+
+
+
+</div>
+
+
+
+<div  class= " container-fluid row " id="corpo" >
+
+
+
+
+
+	<!-- corpo -->
+	<div class=" col-2">
+		<div class="box">
+		<p class="text1" > Grupos </p>
+		</div>
+		<div class="box ">
+			<p class="text1"> Amigos </p>
+
+		</div>
+		<div class="box ">
+
+
+
+				<img src="notification.png" width="30px" alt="">
+
+
+
+	</div>
+
+	</div>
+
+	<div class="col-6 ">
+    <div class="box pad">
+
+
+    <div class="jumbutrom  ">
+			<h1 class="addJogo">ADICIONAR JOGO</h1>
+		</div>
+
+		<form>
+			<div class="row">
+				<div class="col-md-6 col-lg-6">
+
+					<tr>
+						<label><td>Rua:</td></label>
+						<td><input type="text" name="Rua"></td>
+						<label><td>Nº:</td></label>
+						<td><input type="number" name="n" min="1" max="1000"></td><br>
+					</tr>
+					<tr>
+						<label><td>Bairro:</td></label>
+						<td><input type="text" name="Bairro"></td><br>
+					</tr>
+					<tr>
+						<label><td>Complemento:</td></label>
+						<td><input type="text" name="Complemento"></td><br>
+					</tr>
+					<tr>
+						<label><td>Horário:</td></label>
+						<td><input type="text" name="hora" pattern="[0-23]{2}:[0-59]{2}" title="Informe um horário compatível"></td><br>
+					</tr>
+
+					<tr>
+						<label><td>Dia(s):<br></td></label>
+						<input type="checkbox" id="Domingo">
+		                <td><label for="Domingo">Domingo</label>
+		                <input type="checkbox" id="Segunda">
+		                <label for="Domingo">Segunda</label>
+		                <input type="checkbox" id="Terça">
+		                <label for="Terça">Terça</label>
+		                <input type="checkbox" id="Quarta">
+		                <label for="Quarta">Quarta</label>
+		                <input type="checkbox" id="Quinta">
+		                <label for="Quinta">Quinta</label>
+		                <input type="checkbox" id="Sexta">
+		                <label for="Sexta">Sexta</label>
+		                <input type="checkbox" id="Sabado">
+		                <label for="Sabado">Sábado</label></td>
+					</tr>
+				</div>
+				<div class="col-md-6 col-lg-6">
+					<tr>
+						<label><td>Nome:</td></label>
+						<td><input type="text" name="nome"></td><br>
+					</tr>
+					<tr>
+						<label><td>Tipo:</td></label>
+						<input type="checkbox" id="x3">
+		                <label for="x3">X3</label>
+		               <td> <input type="checkbox" id="x5"></td>
+		                <label for="x5">X5</label><br>
+					</tr>
+					<tr>
+						<label><td>Quantidade max.:</td></label>
+						<td><input type="number" name="qtd" min="1" max="100"></td>
+					</tr>
+				</div>
+			</div>
+			<tr>
+				<td><button class="bt" data-toggle="modal" data-target="#confirmar" ><b>ADICIONAR</b></button></td>
+				<td><a href="index.html"><td><button type="button" class="bt"id="cancelar" data-toggle="modal" data-target="#cancelar">CANCELAR</button></td></a></td>
+			</tr>
+		</form>
+
+	</div>
+    </div>
+
+	<div class="col-4 container">
+
+
+
+<div class="container">
+
+
+		<div class="mapa box">
+
+
+			<img  src="mapa.png" width="100%" usemap="#mapa"  >
+
+			<map name="mapa">
+
+
+			<area shape="rect" coords="140,147,188,205" href="https://www.ifsp.edu.br/"   alt="IFSP" target="_blank">
+
+
+		</map>
+
+		<div class="menu row">
+
+			<div class="btn-group col-6">
+			  <button type="button" class="btm es">Zoom in</button>
+			  <button type="button" class="btm d">Zoom out</button>
+
+			</div>
+
+			<div class="col-6">
+					<input class="pesquisar" type="text" placeholder="Pesquisar">
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+
+	</div>
+
+	<div class="container-fluid  ">
+		<div class="box2">
+	<div class="container-fluid">
+  <h2 class="text1">Meus Jogos</h2>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">BABA DO CIEPS</a>
+    <a href="#" class="list-group-item list-group-item-action">BABA ARRAIAL</a>
+    <a href="#" class="list-group-item list-group-item-action">BABA IFBA</a>
+  </div>
+	<div class="pad w-100">
+
+	<a href="addJogo.html"  ><button class="bt" >Adicionar Jogo</button></a>
+	</div>
+</div>
+
+
+
+
+			</div>
+
+
+
+	</div>
+
+	</div>
+
+
+
+
+</div>
+<div class="modal" id="confirmar">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"></h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+				<p class="text1"> Ação confirmada<p>
+
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h4 class="modal-title"></h4>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+
+			<!-- Modal body -->
+			<div class="modal-body">
+					  <form class="cor_fundo" action="" method="post">
+						  <h1 class="cor_texto">LOGIN</h1>
+
+						  <label for="email" class="cor_texto">Email</label>
+						  <input type="email" id="email">
+						  <p></p>
+						  <p></p>
+						  <p>
+						  <label for="password" class="cor_texto">Senha</label>
+						  <input type="password" id="password">
+						  </p><p>
+						  <a href="https://trello-attachments.s3.amazonaws.com/5c77d5fe4af24a5988869ef7/5cc106c3d001c88024b36207/2331268090422e7d0e84ecaad665dcb4/preencher" class="cor_texto">esqueceu a senha?</a>
+						  <a href="https://trello-attachments.s3.amazonaws.com/5c77d5fe4af24a5988869ef7/5cc106c3d001c88024b36207/2331268090422e7d0e84ecaad665dcb4/preencher" class="cor_texto posicao_texto">ainda não possui cadastro?</a>
+						  </p>
+						  <p>
+						  <input type="submit" name="entrar" class="cor_botao">
+						  </p>
+
+					  </form>
+
+			</div>
+      </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
