@@ -261,7 +261,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 				</div>
 
-
+			</div>
 
 			</div>
 
@@ -270,7 +270,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 
 
-	</div>
+
 
 	<div class="modal" id="myModal">
 		<div class="modal-dialog">
