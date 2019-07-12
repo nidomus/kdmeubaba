@@ -55,7 +55,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 				</div>
 
 			<div class="col-8" id="teste">
-					<p id="text"> <?=$usuario->getNome();?>  </p>
+					<p id="text"> <?=$usuario->getNome();?> massa </p>
 
 						
 					<div class="buttonBox">
