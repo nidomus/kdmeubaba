@@ -46,7 +46,6 @@ $usuario= unserialize($_SESSION["usuario"]);
 				<input id="pesquisar" class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
 
 			</form>
-
 			</div>
 
 			<div class="col-4 row" id="perfil">

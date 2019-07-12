@@ -10,6 +10,9 @@
 
 #body{
 	background-color: #e2e2e2;
+	width: 100%;
+	height: 100%;
+	margin: auto;
 
 }
 .bckg{
@@ -49,7 +52,8 @@
 
 	position: absolute;
 	margin-top: 20px; 
-	/* padding-left: 100px; */
+	width: auto;
+	/* margin-left: 2%; */
 
 }
 
@@ -87,7 +91,7 @@
 
 }
 #fotoPerfil {
-    margin-top: 25px;
+    margin-top: 9%;
 
 }
 /* #userName{
@@ -97,7 +101,7 @@
 
 #text{
 	color:#542583;
-	width: fit-content;
+	width: 200%;
 	padding: unset;
 	margin-right: unset;
 }
@@ -110,11 +114,14 @@
 
 }
 
-#perfil{
-		padding: 10px;
-		border-left: 3.5px solid #542583;
-
-
+#perfil {
+    padding-left: 2%;
+    padding-top: unset;
+    height: auto;
+    position: relative;
+    border-left: 3.5px solid #542583;
+    margin-left: 1%;
+    width: 100%;
 }
 
 #icon{
@@ -201,12 +208,11 @@
 	width: fit-content;
 }
 
-#teste{
-
-		padding-left: initial;
-		padding-top: 35px;
-		align-content: center;
-	
+#teste {
+    padding-left: initial;
+    padding-top: 35px;
+    align-content: center;
+    width: fit-content;
 }
 
 .margin{
@@ -274,6 +280,12 @@
 
 
 }
+
+#esquerdo{
+
+	width: 20%;
+
+}
 .pesquisar{
 
 	width: auto;
@@ -287,7 +299,7 @@
 }
 
 #pesquisar{
-	width: 890;
+	width: 100%;
 	border: solid 2px #542583;
 	/* margin-top: 10px;
 	margin-left: 15px; */
