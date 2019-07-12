@@ -12,7 +12,7 @@ session_start();
 
 </head>
 
-<body>
+<body background="visao/oie_transparent.png">
 
     <?php if (empty($_SESSION["usuario"])) { ?>
         <div class="container-fluid">

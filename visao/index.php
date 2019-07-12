@@ -28,7 +28,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 </head>
 
-<body id="body" >
+<body id="body" background="oie_transparent.png">
 
 	<div class="container-fluid">
 
