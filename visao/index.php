@@ -38,7 +38,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 		<div id="topo_1" class="col-3">
 				<a href="index.php" id="linkpag">
-				<img id="logo" src="logo_short.png" alt="">
+				<img id="logoIcon" src="logo_short.png" alt="">
 				</a>
 			</div>
 			<div class="col-6" id="main">
