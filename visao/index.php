@@ -136,13 +136,26 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 					<img src="like_icon.png" width="30px" alt=""id="iconBar">
 					<img src="coment_icon.png" width="30px" alt=""id="iconBar">
-					<img src="alerta_icon.png" width="30px" alt=""id="iconBar">
+					<?php if($usuario->getNivel()==1){?>
+						<p><img src="alerta_icon.png" width="30px" alt=""id="iconBar"> 0 </p>
+						<?php } ?>
+
 
 					</div>
 				</div>
 			</div>
 				<div class="postagem">
-				<div class="dropdown naDireita">
+
+					<div id="topoPostagem" class="row">
+						<div id="fotoPostagem" class="col-2 ">
+							<img src="icon.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" id="usrIcon">
+						</div>
+						<div id="infPostagem" class="col-8">
+							<h4>NJokic </h4>
+							<p></p>
+						</div>
+
+						<div class="dropdown col-2">
 					<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
 						<img src="menu.png">
 					</button>
@@ -158,15 +171,6 @@ $usuario= unserialize($_SESSION["usuario"]);
 						<?php } ?>
 					</div>
 				</div>
-					<div id="topoPostagem" class="row">
-						<div id="fotoPostagem" class="col-2 ">
-							<img src="icon.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" id="usrIcon">
-						</div>
-						<div id="infPostagem" class="col-10">
-							<h4>NJokic </h4>
-							<p></p>
-						</div>
-
 					</div>
 					<div class="conteudo">
 						<div class="center" >
@@ -181,13 +185,16 @@ $usuario= unserialize($_SESSION["usuario"]);
 							</tr>
 						</table>
 					</div>
-
-					<div class="bottonPostagem" >
-					<div></div>
-					</div>
 					</div>
 
-				</div>
+					<div class="reactionBox">
+					<img src="like_icon.png" width="30px" alt=""id="iconBar">
+					<img src="coment_icon.png" width="30px" alt=""id="iconBar">
+					<?php if($usuario->getNivel()==1){?>
+					<p><img src="alerta_icon.png" width="30px" alt=""id="iconBar"> 0 </p>
+					<?php } ?>
+					</div>
+					</div>	
 
 
 
