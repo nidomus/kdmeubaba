@@ -30,15 +30,16 @@
 }
 
 #main {
-    margin-top: 50px;
+    margin-top: 40px;
 	margin-left: 0px;
 	width: fit-content;
 }
 
 #corpo{
 
+	position: absolute;
 	margin-top: 20px; 
-	padding-left: 200px;
+	/* padding-left: 100px; */
 
 }
 
@@ -77,9 +78,18 @@
 }
 #fotoPerfil {
     margin-top: 25px;
+
 }
+/* #userName{
+	
+
+} */
+
 #text{
 	color:#542583;
+	width: fit-content;
+	padding: unset;
+	margin-right: unset;
 }
 
 .pad{
@@ -89,8 +99,10 @@
 
 
 }
+
 #perfil{
 		padding: 10px;
+		border-left: 3.5px solid #542583;
 
 
 }
@@ -265,7 +277,7 @@
 }
 
 #pesquisar{
-	width: 790px;
+	width: 890;
 	border: solid 2px #542583;
 	/* margin-top: 10px;
 	margin-left: 15px; */

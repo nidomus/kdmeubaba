@@ -36,7 +36,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 		<div id="topo" class="jumbotron-fluid row">
 
 
-		<div id="topo_1" class="col-3">
+		<div id="topo_1" class="col-2">
 				<a href="index.php" id="linkpag">
 				<img id="logoIcon" src="logo_short.png" alt="">
 				</a>
@@ -49,15 +49,19 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 			</div>
 
-			<div class="col-3 row" id="perfil">
-			<div class="col-4" id="fotoPerfil">
+			<div class="col-4 row" id="perfil">
+			<div class="col-2" id="fotoPerfil">
 				<img id="icon" src="basketball-player.png" alt="">
 				</div>
 
-			<div class="col-8 row" id="teste">
-				<div class="col-6 fit">
+			<div class="col-10 row" id="teste">
+				<div class="col-6" id="userName">
+					<?php if($usuario->getNivel()==1){?>
+
+					<p id="text"> <?=$usuario->getNome();?> (Moderador)</p>
+					<?php } else{ ?>
 					<p id="text"> <?=$usuario->getNome();?></p>
-				
+					<?php } ?>
 				</div>
 						
 					<div class="buttonBox col-6 fit">
