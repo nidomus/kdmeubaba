@@ -15,11 +15,33 @@
     padding-left:50px; 
 
 }
+
+a{
+  color: #542583;
+  font-family: High Tower text;
+  float: right;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
 #login{
   
     top: 0px;   
-    padding: 10px 6% 45px 6%;
-    margin: 0 0 35px 0;
+    padding: 10px 6% 20px 6%;
+    margin: 0 0 10px 0;
     
     /*
     -webkit-box-shadow: 5px;
@@ -79,7 +101,7 @@
 
 .box {
             width: 455px;
-            height: 60%;
+            height: fit-content;
             background: #fdb827;
             border-radius: 40px;
             justify-content: center;

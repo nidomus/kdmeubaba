@@ -5,6 +5,7 @@ require_once("../modelo/Usuario.php");
 
 <?php
 $usuario= unserialize($_SESSION["usuario"]);
+$conexao = new PDO("mysql:host=127.0.0.1;dbname=banco_usuario;port=3306","root","");
 ?>
 
 <html>
@@ -28,7 +29,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 </head>
 
-<body id="body" background="oie_transparent.png">
+<body id="body" background="imagens/oie_transparent.png">
 
 	<div class="container-fluid">
 
@@ -38,7 +39,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 		<div id="topo_1" class="col-2">
 				<a href="index.php" id="linkpag">
-				<img id="logoIcon" src="logo_short.png" alt="">
+				<img id="logoIcon" src="imagens/logo_short.png" alt="">
 				</a>
 			</div>
 			<div class="col-6" id="main">
@@ -50,7 +51,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 			<div class="col-4 row" id="perfil">
 			<div class="col-2" id="fotoPerfil">
-				<img id="icon" src="basketball-player.png" alt="">
+				<img id="icon" src="imagens/basketball-player.png" alt="">
 				</div>
 
 			<div class="col-10 row" id="teste">
@@ -65,8 +66,8 @@ $usuario= unserialize($_SESSION["usuario"]);
 						
 					<div class="buttonBox col-6 fit">
 
-			<img src="notification.png" width="30px" alt=""id="iconBar">
-			<a href="../controle/sair.php"><img src="exit_icon.png" width="30px" alt=""id="iconBar"></a>
+			<img src="imagens/notification.png" width="30px" alt=""id="iconBar">
+			<a href="../controle/sair.php"><img src="imagens/exit_icon.png" width="30px" alt=""id="iconBar"></a>
 
 </div>
 			</div>
@@ -94,123 +95,120 @@ $usuario= unserialize($_SESSION["usuario"]);
 		</div>
 
 		<div class="col-6" id="centro">
-			<div class="">
-				<div class="postagem">
-					
-				<div class="container">
+
+		<button id="bt_postagem"> Adicionar Postagem </button>
+			<?php
+		
+
+        $sql = "select txt from postagem";
+        $acao = $conexao->query($sql);
+
+			foreach($acao as $row)
+
+			{
+			?>	
+
+			<div class="postagem">
+			<div id="topoPostagem" class="row">
+							<div id="fotoPostagem" class="col-2 ">
+								<img src="imagens/icon.png" id="usrIcon" alt="John Doe" class="mr-3 mt-3 rounded-circle">
+							</div>
+								<div id="infPostagem" class="col-8">
+
+								</div>
+	
+								<div class="dropdown col-2">
+						<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
+							<img src="imagens/menu.png">
+						</button>
+	
+						<div class="dropdown-menu">
 						
-
-
-					<div id="topoPostagem" class="row">
-						<div id="fotoPostagem" class="col-2 ">
-							<img src="icon.png" id="usrIcon" alt="John Doe" class="mr-3 mt-3 rounded-circle">
+							<a class="dropdown-item" href="#">COMPARTILHAR</a>
+							<a class="dropdown-item" href="#">DENUNCIAR</a>
+							<a class="dropdown-item" href="#">SALVAR</a>
+							<?php if($usuario->getNivel()==1){?>
+							<a class="dropdown-item" href="#">BLOQUEAR POSTAGEM</a>
+							<a class="dropdown-item" href="#">ANALISAR DENÚCIAS</a>
+							<?php } ?>
 						</div>
-							<div id="infPostagem" class="col-8">
-								 <h4>LBJames <!--<i>Posted on February 19, 2016</i></small>--></h4>
-								<p>Sauce!</p>
+					</div>
+					</div>
+
+			<p><?=$row["txt"]?></p>
+
+			</div>
+
+
+
+					<!-- <div class="postagem">
+					
+					<div class="container">
+							
+	
+	
+						<div id="topoPostagem" class="row">
+							<div id="fotoPostagem" class="col-2 ">
+								<img src="imagens/icon.png" id="usrIcon" alt="John Doe" class="mr-3 mt-3 rounded-circle">
+							</div>
+								<div id="infPostagem" class="col-8">
+
+								</div>
+	
+								<div class="dropdown col-2">
+						<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
+							<img src="imagens/menu.png">
+						</button>
+	
+						<div class="dropdown-menu">
+						
+							<a class="dropdown-item" href="#">COMPARTILHAR</a>
+							<a class="dropdown-item" href="#">DENUNCIAR</a>
+							<a class="dropdown-item" href="#">SALVAR</a>
+							<?php if($usuario->getNivel()==1){?>
+							<a class="dropdown-item" href="#">BLOQUEAR POSTAGEM</a>
+							<a class="dropdown-item" href="#">ANALISAR DENÚCIAS</a>
+							<?php } ?>
+						</div>
+					</div>
+	
+						</div>
+						<div class="conteudo">
+
+							
+						</div>	
+						</div>
+						<div class="reactionBox">
+	
+						<img src="imagens/like_icon.png" width="30px" alt=""id="iconBar">
+						<img src="imagens/coment_icon.png" width="30px" alt=""id="iconBar">
+						<?php if($usuario->getNivel()==1){?>
+							<p><img src="imagens/alerta_icon.png" width="30px" alt=""id="iconBar"> 0 </p>
+							<?php } ?>
+	
+	
+						</div>
+					</div>
+				</div> -->
+
+			<?php
+			}
+
+			?>
 							</div>
 
-							<div class="dropdown col-2">
-					<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
-						<img src="menu.png">
-					</button>
-
-					<div class="dropdown-menu">
-					
-						<a class="dropdown-item" href="#">COMPARTILHAR</a>
-						<a class="dropdown-item" href="#">DENUNCIAR</a>
-						<a class="dropdown-item" href="#">SALVAR</a>
-						<?php if($usuario->getNivel()==1){?>
-						<a class="dropdown-item" href="#">BLOQUEAR POSTAGEM</a>
-						<a class="dropdown-item" href="#">ANALISAR DENÚCIAS</a>
-						<?php } ?>
-					</div>
-				</div>
-
-					</div>
-					<div class="conteudo">
-						<img class="center" id="img" src="post.jpg" alt="" width="50%">
-					</div>	
-					</div>
-					<div class="reactionBox">
-
-					<img src="like_icon.png" width="30px" alt=""id="iconBar">
-					<img src="coment_icon.png" width="30px" alt=""id="iconBar">
-					<?php if($usuario->getNivel()==1){?>
-						<p><img src="alerta_icon.png" width="30px" alt=""id="iconBar"> 0 </p>
-						<?php } ?>
-
-
-					</div>
-				</div>
-			</div>
-				<div class="postagem">
-
-					<div id="topoPostagem" class="row">
-						<div id="fotoPostagem" class="col-2 ">
-							<img src="icon.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" id="usrIcon">
-						</div>
-						<div id="infPostagem" class="col-8">
-							<h4>NJokic </h4>
-							<p></p>
-						</div>
-
-						<div class="dropdown col-2">
-					<button type="button" class="btnSemBorda dropdown-toggle" data-toggle="dropdown">
-						<img src="menu.png">
-					</button>
-
-					<div class="dropdown-menu">
-					
-						<a class="dropdown-item" href="#">COMPARTILHAR</a>
-						<a class="dropdown-item" href="#">DENUNCIAR</a>
-						<a class="dropdown-item" href="#">SALVAR</a>
-						<?php if($usuario->getNivel()==1){?>
-						<a class="dropdown-item" href="#">BLOQUEAR POSTAGEM</a>
-						<a class="dropdown-item" href="#">ANALISAR DENÚCIAS</a>
-						<?php } ?>
-					</div>
-				</div>
-					</div>
-					<div class="conteudo">
-						<div class="center" >
-						<h3> <b>Evento: BABA FONTANA</b></h3>
-						<table>
-							<tr>
-
-								<td><button class="bt" data-toggle="modal" data-target="#confirmar">Participar</button>
-								</td>
-								<td><button class="bt" id="Cancelar" data-toggle="modal"
-										data-target="#cancelar">Cancelar</button></td>
-							</tr>
-						</table>
-					</div>
-					</div>
-
-					<div class="reactionBox">
-					<img src="like_icon.png" width="30px" alt=""id="iconBar">
-					<img src="coment_icon.png" width="30px" alt=""id="iconBar">
-					<?php if($usuario->getNivel()==1){?>
-					<p><img src="alerta_icon.png" width="30px" alt=""id="iconBar"> 0 </p>
-					<?php } ?>
-					</div>
-					</div>	
-
-
-
-			</div>
-
-		<div class="col-4 container" id="direita">
+			
+		<div class="col-3 container" id="direita">
 
 
 
 			<div class="container">
 
-
+				<!--
 				<div class="mapa box">
 
 
-					<img src="mapa.png" width="100%" usemap="#mapa">
+					<img src="imagens/mapa.png" width="100%" usemap="#mapa">
 
 					<map name="mapa">
 
@@ -240,7 +238,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 				</div>
 
 			</div>
-
+					-->			
 			<div class="container-fluid  ">
 				<div class="box2">
 					<div class="container-fluid">
@@ -272,7 +270,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 
 
-	<div class="modal" id="myModal">
+	<div class="modal" id="addPost">
 		<div class="modal-dialog">
 			<div class="modal-content">
 
@@ -284,28 +282,7 @@ $usuario= unserialize($_SESSION["usuario"]);
 
 				<!-- Modal body -->
 				<div class="modal-body">
-					<form class="cor_fundo" action="" method="post">
-						<h1 class="cor_texto">LOGIN</h1>
 
-						<label for="email" class="cor_texto">Email</label>
-						<input type="email" id="email">
-						<p></p>
-						<p></p>
-						<p>
-							<label for="password" class="cor_texto">Senha</label>
-							<input type="password" id="password">
-						</p>
-						<p>
-							<a href="https://trello-attachments.s3.amazonaws.com/5c77d5fe4af24a5988869ef7/5cc106c3d001c88024b36207/2331268090422e7d0e84ecaad665dcb4/preencher"
-								class="cor_texto">esqueceu a senha?</a>
-							<a href="https://trello-attachments.s3.amazonaws.com/5c77d5fe4af24a5988869ef7/5cc106c3d001c88024b36207/2331268090422e7d0e84ecaad665dcb4/preencher"
-								class="cor_texto posicao_texto">ainda não possui cadastro?</a>
-						</p>
-						<p>
-							<input type="submit" name="entrar" class="cor_botao">
-						</p>
-
-					</form>
 
 				</div>
 
@@ -317,6 +294,8 @@ $usuario= unserialize($_SESSION["usuario"]);
 			</div>
 		</div>
 	</div>
+
+
 	<div class="modal" id="confirmar">
 		<div class="modal-dialog">
 			<div class="modal-content">

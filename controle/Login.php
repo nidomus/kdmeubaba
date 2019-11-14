@@ -15,15 +15,11 @@ if ($usuario != NULL) {
     session_start();
     $_SESSION["usuario"] = serialize($usuario);
     header("location: visao/index.php");
-    /*
-    date_default_timezone_set('America/Sao_Paulo');
-    $hora= date('H:i');
-    $_SESSION["horario"]= $hora;
-    */
+
 } else {
     session_start();
     $_SESSION["msg"] = "Usuario inexistente";
 }
 
-header("location: ../login.php");
+header("location: ../visao/index.php");
 ?>

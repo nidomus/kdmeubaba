@@ -25,17 +25,25 @@ session_start();
                 <div id="login">
 
 
-                    <form action="controle/login.php" method="post">
+                    <form action="controle/cadastrar.php" method="post">
 
 
                         <div>
 
-                            <label for="mail">Email</label>
+                            <label for="mail">Nome</label>
 
-                            <input type="email" name="email" id="mail" placeholder="E-mail">
+                            <input type="text" name="nome" id="mail" placeholder="Nome">
 
                         </div>
 
+                        <div>
+                    <br>
+                    <label for="mail">Email</label>
+
+                    <input type="email" name="email" id="mail" placeholder="E-mail">
+
+                    </div>
+                    <br>
                         <div class="margin-top">
 
                             <label for="pass">Senha</label>
@@ -44,8 +52,8 @@ session_start();
 
                         </div>
 
-                        <p> <input type="submit" value="Logar" /> </p>
-                        <p> <a  href="cadastro.php">Cadastrar-se</a> </p>
+                        <p> <input type="submit" value="Cadastrar" /> </p>
+        
 
 
                 </div>

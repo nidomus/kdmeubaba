@@ -16,7 +16,7 @@ body{
 
 }
 .bckg{
-	background-image: url(jogobasquete.jpg);
+	background-image: url(imagens/jogobasquete.jpg);
 	background-repeat: no-repeat;
 	width:100%;
 
@@ -59,8 +59,8 @@ body{
 }
 
 #direita{
-
-	position: relative;
+padding: 0px;
+	
 
 }
 
@@ -149,7 +149,8 @@ body{
 
 #centro{
 
-	position: relative;
+
+
 
 }
 
@@ -170,6 +171,15 @@ body{
 	border-radius: 25px;
 	height: 50px;
 	width: 200px;
+}
+#bt_postagem{
+	color: #FBD827;
+	font-size: 150%;
+	background-color: #542583;
+	border-color: #542583;
+	border-radius: 10px;
+	height: 50px;
+	width: 100%;
 }
 .btm{
 	color: #FBD827;
@@ -226,7 +236,8 @@ body{
 	
 	background-color: #FDB827;
 	width: auto;
-	margin:10px;
+	margin-bottom: 10px;
+	margin-left: 15px;
 	border: solid 3px #542583;
 	border-radius: 10px;
 }
@@ -263,8 +274,6 @@ body{
 	background-color: #FDB827;
 	height: 350px;
 	width: auto;
-	margin:10px;
-	margin-top:20px;
 	border: solid 3px #542583;
 	border-radius: 10px;
 	padding: 40px;
@@ -360,7 +369,7 @@ border-bottom:3.5px solid #542583;
 	padding-right: 25px;
 	padding-left: 25px;
 	padding-bottom: 25px;
-	height: 110%;
+	height: fit-content;
 }
 
 .overflow{
